@@ -35,8 +35,9 @@
       "required": true
     },
     "oneshot": {
-      "model": "oneshot",
-      "via": "artists"
+      "collection": "oneshot",
+      "via": "artists",
+      "dominant": true
     },
     "series": {
       "collection": "series",
