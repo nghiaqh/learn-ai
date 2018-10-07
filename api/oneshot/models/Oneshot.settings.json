@@ -1,0 +1,40 @@
+{
+  "connection": "default",
+  "collectionName": "oneshot",
+  "info": {
+    "name": "oneshot",
+    "description": "One-shot is a single story or book that is not part of series"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "default": "",
+      "type": "string"
+    },
+    "description": {
+      "default": "",
+      "type": "string"
+    },
+    "type": {
+      "default": "",
+      "type": "enumeration",
+      "enum": [
+        "Manga",
+        "Art book",
+        "Comic",
+        "Doujinshi"
+      ],
+      "required": true
+    },
+    "thumbnail": {
+      "default": "",
+      "type": "string"
+    },
+    "artists": {
+      "collection": "artist",
+      "via": "oneshot"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "connection": "default",
+  "collectionName": "artist",
+  "info": {
+    "name": "artist",
+    "description": "Artist represents mangaka, illustrator, comic author"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "biography": {
+      "default": "",
+      "type": "text"
+    },
+    "avatar": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "type": {
+      "default": "",
+      "type": "enumeration",
+      "enum": [
+        "Mangaka",
+        "Illustrator",
+        "Comics artist"
+      ],
+      "required": true
+    },
+    "oneshot": {
+      "model": "oneshot",
+      "via": "artists"
+    }
+  }
+}

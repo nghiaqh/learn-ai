@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/artists",
+      "handler": "Artist.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/artists/count",
+      "handler": "Artist.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/artists/:_id",
+      "handler": "Artist.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/artists",
+      "handler": "Artist.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/artists/:_id",
+      "handler": "Artist.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/artists/:_id",
+      "handler": "Artist.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

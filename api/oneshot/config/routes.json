@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/oneshots",
+      "handler": "Oneshot.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/oneshots/count",
+      "handler": "Oneshot.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/oneshots/:_id",
+      "handler": "Oneshot.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/oneshots",
+      "handler": "Oneshot.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/oneshots/:_id",
+      "handler": "Oneshot.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/oneshots/:_id",
+      "handler": "Oneshot.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

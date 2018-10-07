@@ -23,12 +23,16 @@
 
 ## Artist
 
+Artist represents mangaka, illustrator, comics artist
+
 - **Properties**: id, name, biography, type, avatar
 - **Relationships**:
   - artist has many one-shots
   - artist has many series
 
 ## One-shot
+
+One-shot is a single, self-contained story or book that is not part of a series
 
 - **Properties**: id, title, description, type, thumbnail
 - **Relationships**:
