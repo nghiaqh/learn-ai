@@ -37,6 +37,10 @@
     "oneshot": {
       "model": "oneshot",
       "via": "artists"
+    },
+    "series": {
+      "collection": "series",
+      "via": "artists"
     }
   }
 }

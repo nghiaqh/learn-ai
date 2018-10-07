@@ -1,0 +1,46 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "series",
+    "description": "Series (manga, comics) is an art work depecting stories in multiple volumes"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "default": "",
+      "type": "string"
+    },
+    "description": {
+      "default": "",
+      "type": "text"
+    },
+    "thumbnail": {
+      "default": "",
+      "type": "string"
+    },
+    "type": {
+      "enum": [
+        "Manga",
+        " Comics"
+      ],
+      "default": "",
+      "type": "enumeration"
+    },
+    "status": {
+      "default": "",
+      "type": "enumeration",
+      "enum": [
+        "On going",
+        " Finished"
+      ]
+    },
+    "artists": {
+      "collection": "artist",
+      "dominant": true,
+      "via": "series"
+    }
+  }
+}

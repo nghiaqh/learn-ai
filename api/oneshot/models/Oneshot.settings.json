@@ -23,7 +23,7 @@
       "enum": [
         "Manga",
         "Art book",
-        "Comic",
+        "Comics",
         "Doujinshi"
       ],
       "required": true

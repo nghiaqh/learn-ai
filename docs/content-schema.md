@@ -41,7 +41,9 @@ One-shot is a single, self-contained story or book that is not part of a series
 
 ## Series
 
-- **Properties**: id, title, description, type, thumbnail
+Series (manga, comics) is an art work depecting stories in multiple volumes
+
+- **Properties**: id, title, description, type, thumbnail, status
 - **Relationships**:
   - series has many artists
   - series has many volumes
