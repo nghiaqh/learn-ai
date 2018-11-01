@@ -36,8 +36,8 @@
     },
     "oneshot": {
       "collection": "oneshot",
-      "via": "artists",
-      "dominant": true
+      "dominant": true,
+      "via": "artists"
     },
     "series": {
       "collection": "series",

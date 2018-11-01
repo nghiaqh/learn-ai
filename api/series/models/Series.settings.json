@@ -1,6 +1,6 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "series",
   "info": {
     "name": "series",
     "description": "Series (manga, comics) is an art work depecting stories in multiple volumes"
@@ -11,7 +11,8 @@
   "attributes": {
     "title": {
       "default": "",
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "description": {
       "default": "",
@@ -39,7 +40,15 @@
     },
     "artists": {
       "collection": "artist",
-      "dominant": true,
+      "via": "series",
+      "dominant": true
+    },
+    "chapter": {
+      "model": "chapter",
+      "via": "series"
+    },
+    "volume": {
+      "model": "volume",
       "via": "series"
     }
   }

@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "image",
+  "info": {
+    "name": "image",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "default": "",
+      "type": "string"
+    },
+    "uri": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "number": {
+      "default": "",
+      "type": "text",
+      "required": true
+    }
+  }
+}

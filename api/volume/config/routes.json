@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/volumes",
+      "handler": "Volume.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/volumes/count",
+      "handler": "Volume.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/volumes/:_id",
+      "handler": "Volume.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/volumes",
+      "handler": "Volume.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/volumes/:_id",
+      "handler": "Volume.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/volumes/:_id",
+      "handler": "Volume.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

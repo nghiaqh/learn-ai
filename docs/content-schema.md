@@ -65,7 +65,7 @@ Series (manga, comics) is an art work depecting stories in multiple volumes
 
 ## Image
 
-- **Properties**: id, uri, name, number, thumbnail
+- **Properties**: id, uri, title, number, thumbnail
 - **Relationships**:
   - image belongs to 1 chapter
   - image belongs to 1 volume

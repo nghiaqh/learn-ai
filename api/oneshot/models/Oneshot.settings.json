@@ -11,7 +11,8 @@
   "attributes": {
     "title": {
       "default": "",
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "description": {
       "default": "",
@@ -34,6 +35,10 @@
     },
     "artists": {
       "collection": "artist",
+      "via": "oneshot"
+    },
+    "chapter": {
+      "model": "chapter",
       "via": "oneshot"
     }
   }

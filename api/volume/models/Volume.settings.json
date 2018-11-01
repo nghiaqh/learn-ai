@@ -1,0 +1,33 @@
+{
+  "connection": "default",
+  "collectionName": "volume",
+  "info": {
+    "name": "volume",
+    "description": "manga volume"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "default": "",
+      "type": "string"
+    },
+    "description": {
+      "default": "",
+      "type": "text"
+    },
+    "chapter": {
+      "model": "chapter",
+      "via": "volume"
+    },
+    "series": {
+      "model": "series",
+      "via": "volume"
+    },
+    "thumbnail": {
+      "default": "",
+      "type": "string"
+    }
+  }
+}
